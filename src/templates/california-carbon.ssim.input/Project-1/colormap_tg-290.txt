@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (URBANIZATION: Wetland->Developed [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+36,255,255,0,255,URBANIZATION: Wetland->Developed

@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (MANAGEMENT: Forest Clearcut [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+60,0,128,128,255,MANAGEMENT: Forest Clearcut

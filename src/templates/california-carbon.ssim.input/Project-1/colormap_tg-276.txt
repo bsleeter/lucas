@@ -1,0 +1,4 @@
+# Syncrosim Generated Transition Group (HARVEST) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+60,0,128,128,255,MANAGEMENT: Forest Clearcut
+61,128,0,128,255,MANAGEMENT: Forest Thinning

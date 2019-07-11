@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (AGRICULTURAL EXPANSION: Wetland->Perennial [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+29,0,0,255,255,AGRICULTURAL EXPANSION: Wetland->Perennial

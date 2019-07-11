@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (INSECTS: High Severity [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+50,165,42,42,255,INSECTS: High Severity

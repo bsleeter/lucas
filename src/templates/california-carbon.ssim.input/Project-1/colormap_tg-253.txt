@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (AGRICULTURAL EXPANSION: Forest->Perennial [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+23,255,255,0,255,AGRICULTURAL EXPANSION: Forest->Perennial

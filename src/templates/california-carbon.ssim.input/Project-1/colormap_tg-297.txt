@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (VEGETATION CHANGE: Shrubland->Grassland [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+75,0,128,0,255,VEGETATION CHANGE: Shrubland->Grassland

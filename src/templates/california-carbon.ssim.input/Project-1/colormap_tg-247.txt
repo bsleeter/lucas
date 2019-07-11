@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (AGRICULTURAL CONTRACTION: Perennial->Forest [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+15,0,128,128,255,AGRICULTURAL CONTRACTION: Perennial->Forest

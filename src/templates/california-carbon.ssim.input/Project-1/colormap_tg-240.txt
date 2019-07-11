@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (AGRICULTURAL CHANGE: Annual->Perennial [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+1,0,128,0,255,AGRICULTURAL CHANGE: Annual->Perennial

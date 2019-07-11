@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (AGRICULTURAL CONTRACTION: Annual->Grassland [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+12,255,165,0,255,AGRICULTURAL CONTRACTION: Annual->Grassland

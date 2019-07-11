@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (URBANIZATION: Forest->Developed [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+31,0,128,0,255,URBANIZATION: Forest->Developed

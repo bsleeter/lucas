@@ -1,0 +1,5 @@
+# Syncrosim Generated Transition Group (FIRE: Medium Severity) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+41,255,255,0,255,FIRE: Forest Medium Severity
+44,255,165,0,255,FIRE: Grassland Medium Severity
+47,0,255,255,255,FIRE: Shrubland Medium Severity

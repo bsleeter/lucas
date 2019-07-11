@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (AGRICULTURAL EXPANSION: Shrubland->Annual [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+26,0,128,0,255,AGRICULTURAL EXPANSION: Shrubland->Annual

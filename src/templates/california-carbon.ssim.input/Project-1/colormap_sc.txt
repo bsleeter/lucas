@@ -1,0 +1,13 @@
+# Syncrosim Generated State Class Color Map (QGIS-compatible),,,,,
+INTERPOLATION:EXACT
+8,174,114,41,255,Agriculture:Annual
+12,165,56,0,255,Agriculture:Perennial
+5,179,175,164,255,Barren:All
+2,0,0,0,255,Developed:All
+3,75,75,75,255,Developed:Transportation
+6,29,101,51,255,Forest:All
+7,237,236,205,255,Grassland:All
+10,209,187,130,255,Shrubland:All
+11,255,255,255,255,SnowIce:All
+1,72,109,162,255,Water:All
+9,113,164,193,255,Wetland:All

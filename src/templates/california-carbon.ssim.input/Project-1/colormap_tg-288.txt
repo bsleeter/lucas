@@ -1,0 +1,3 @@
+# Syncrosim Generated Transition Group (URBANIZATION: Perennial->Developed [Type]) Color Map (QGIS-compatible) Export File,,,,,
+INTERPOLATION:EXACT
+34,0,255,255,255,URBANIZATION: Perennial->Developed
