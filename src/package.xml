@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" version="1.0.1" url="https://github.com/bsleeter/lucas">
+  <transformers>
+    <transformer name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" isPrimary="True" templatesOnly="True">
+      <runtime>
+        <transformer name="stsim_Primary"/>
+      </runtime>
+    </transformer>
+  </transformers>
+  <layouts>
+    <layout name="coreforms_ResultTransformers">
+      <item name="corestime_ChartTransformer"/>
+      <item name="corestime_MapTransformer"/>
+      <group name="Export">
+        <group name="Reports">
+          <item name="stsim_StateClassSummaryReport"/>
+          <item name="stsim_TransitionSummaryReport"/>
+          <item name="stsim_TransitionStateSummaryReport"/>
+          <item name="stsim_StateAttributeReport"/>
+          <item name="stsim_TransitionAttributeReport"/>
+          <item name="coreforms_ScenarioDescriptionReport"/>
+        </group>
+        <group name="Maps">
+          <item name="stsim_StateClassRasterMap"/>
+          <item name="stsim_TransitionRasterMap"/>
+          <item name="stsim_AgeRasterMap"/>
+          <item name="stsim_TSTRasterMap"/>
+          <item name="stsim_StratumRasterMap"/>
+          <item name="stsim_StateAttributeRasterMap"/>
+          <item name="stsim_TransitionAttributeRasterMap"/>
+          <item name="stsim_AATPRasterMap"/>
+          <item name="stsim_TransitionEventRasterMap"/>
+        </group>
+      </group>
+    </layout>
+    <layout name="coreforms_LibraryDatafeeds">
+      <item name="core_SysFolder"/>
+      <item name="core_Backup"/>
+      <item name="core_Multiprocessing"/>
+      <item name="corestime_Options" displayName="Spatial"/>
+      <group name="Options">
+        <item name="core_Options" displayName="General"/>
+        <item name="core_Rconfig"/>
+      </group>
+    </layout>
+    <layout name="coreforms_ProjectDatafeeds">
+      <group name="stsim_Strata">
+        <item name="stsim_Stratum"/>
+        <item name="stsim_SecondaryStratum"/>
+        <item name="stsim_TertiaryStratum"/>
+      </group>
+      <group name="States">
+        <item name="stsim_StateLabelX"/>
+        <item name="stsim_StateLabelY"/>
+        <item name="stsim_StateClass"/>
+      </group>
+      <group name="Transitions">
+        <item name="stsim_TransitionType"/>
+        <item name="stsim_TransitionGroup"/>
+        <item name="stsim_TransitionTypeGroup"/>
+        <group name="Advanced">
+          <item name="stsim_TransitionSimulationGroup"/>
+          <item name="stsim_TransitionMultiplierType"/>
+        </group>
+      </group>
+      <group name="Ages">
+        <item name="stsim_AgeType"/>
+        <item name="stsim_AgeGroup"/>
+      </group>
+      <group name="Advanced">
+        <group name="stsim_Attributes">
+          <item name="stsim_AttributeGroup"/>
+          <item name="stsim_StateAttributeType"/>
+          <item name="stsim_TransitionAttributeType"/>
+        </group>
+        <item name="corestime_DistributionType"/>
+        <item name="corestime_ExternalVariableType"/>
+        <item name="stsim_SizeClass"/>
+      </group>
+      <item name="Terminology"/>
+    </layout>
+    <layout name="coreforms_ScenarioDatafeeds">
+      <item name="stsim_RunControl"/>
+      <item name="stsim_Transition" displayName="Transition Pathways"/>
+      <group name="Initial Conditions">
+        <item name="stsim_InitialConditionsNonSpatial" displayName="Non Spatial"/>
+        <item name="stsim_InitialConditionsSpatial" displayName="Spatial"/>
+      </group>
+      <item name="stsim_TransitionTarget"/>
+      <item name="stsim_OutputOptions"/>
+      <group name="Advanced">
+        <item name="stsim_TransitionMultiplierValue" displayName="Transitions - Multipliers"/>
+        <group name="Transitions - Spatial">
+          <group name="Transition Size">
+            <item name="stsim_TransitionSizeDistribution"/>
+            <item name="stsim_TransitionSizePrioritization"/>
+          </group>
+          <item name="stsim_TransitionSpreadDistribution"/>
+          <item name="stsim_TransitionPatchPrioritization"/>
+          <item name="stsim_TransitionSpatialMultiplier"/>
+          <item name="stsim_TransitionSpatialInitiationMultiplier"/>
+          <item name="stsim_TransitionDirectionMultiplier"/>
+          <item name="stsim_TransitionSlopeMultiplier"/>
+          <item name="stsim_TransitionAdjacencyMultiplier"/>
+          <item name="stsim_TransitionPathwayAutoCorrelation"/>
+        </group>
+        <item name="stsim_TransitionOrder" displayName="Transitions - Order"/>
+        <item name="stsim_TransitionTargetPrioritization" displayName="Transitions - Target Prioritization"/>
+        <group name="Time Since Transition">
+          <item name="stsim_TimeSinceTransitionGroup"/>
+          <item name="stsim_TimeSinceTransitionRandomize"/>
+        </group>
+        <group name="Attributes">
+          <item name="stsim_StateAttributeValue"/>
+          <item name="stsim_TransitionAttributeValue"/>
+          <item name="stsim_TransitionAttributeTarget"/>
+          <item name="stsim_TransitionAttributeTargetPrioritization" displayName="Attribute Target Prioritization"/>
+        </group>
+        <item name="stsim_DistributionValue"/>
+        <item name="corestime_ExternalVariableValue"/>
+        <item name="stsim_Multiprocessing"/>
+        <item name="corestime_Multiprocessing"/>
+        <item name="corestime_External" displayName="External Program"/>
+      </group>
+    </layout>
+    <layout name="coreforms_ScenarioDatafeedsLite">
+      <item name="stsim_RunControl"/>
+      <item name="stsim_TransitionTarget"/>
+    </layout>
+    <layout name="corestimeforms_Charts"
+      configurationSheet="stsim_RunControl"
+      className="SyncroSim.STSim.STSimChartProvider"
+      classAssembly="SyncroSim.STSim">
+    </layout>
+    <layout name="corestimeforms_Maps"
+      configurationSheet="stsim_RunControl"
+      className="SyncroSim.STSim.STSimMapProvider"
+      classAssembly="SyncroSim.STSim">
+    </layout>
+  </layouts>
+</package>
