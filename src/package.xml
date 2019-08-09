@@ -44,7 +44,7 @@
       </group>
     </layout>
     <layout name="coreforms_ProjectDatafeeds">
-      <group name="stsim_Strata">
+      <group name="Strata">
         <item name="stsim_Stratum"/>
         <item name="stsim_SecondaryStratum"/>
         <item name="stsim_TertiaryStratum"/>
@@ -68,7 +68,7 @@
         <item name="stsim_AgeGroup"/>
       </group>
       <group name="Advanced">
-        <group name="stsim_Attributes">
+        <group name="Attributes">
           <item name="stsim_AttributeGroup"/>
           <item name="stsim_StateAttributeType"/>
           <item name="stsim_TransitionAttributeType"/>
@@ -77,7 +77,7 @@
         <item name="corestime_ExternalVariableType"/>
         <item name="stsim_SizeClass"/>
       </group>
-      <item name="Terminology"/>
+      <item name="stsim_Terminology"/>
     </layout>
     <layout name="coreforms_ScenarioDatafeeds">
       <item name="stsim_RunControl"/>
