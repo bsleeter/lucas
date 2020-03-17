@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<package name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" version="1.0.2" url="https://github.com/bsleeter/lucas">
+<package name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" version="1.0.3" url="https://github.com/bsleeter/lucas">
   <transformers>
     <transformer name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" isPrimary="True" templatesOnly="True">
       <runtime>
@@ -36,7 +36,10 @@
     <layout name="coreforms_LibraryDatafeeds">
       <item name="core_SysFolder"/>
       <item name="core_Backup"/>
-      <item name="core_Multiprocessing"/>
+      <group name="Multiprocessing">
+        <item name="core_Multiprocessing" displayName="General"/>
+        <item name="core_ProcessorGroup"/>
+      </group>
       <item name="corestime_Options" displayName="Spatial"/>
       <group name="Options">
         <item name="core_Options" displayName="General"/>
@@ -82,7 +85,7 @@
     <layout name="coreforms_ScenarioDatafeeds">
       <item name="stsim_RunControl"/>
       <item name="stsim_Transition" displayName="Transition Pathways"/>
-      <group name="Initial Conditions">
+      <group name="STSimInitialConditionsGroup" displayName="Initial Conditions">
         <item name="stsim_InitialConditionsNonSpatial" displayName="Non Spatial"/>
         <item name="stsim_InitialConditionsSpatial" displayName="Spatial"/>
       </group>
@@ -90,8 +93,8 @@
       <item name="stsim_OutputOptions"/>
       <group name="Advanced">
         <item name="stsim_TransitionMultiplierValue" displayName="Transitions - Multipliers"/>
-        <group name="Transitions - Spatial">
-          <group name="Transition Size">
+        <group name="STSimTransitionsSpatialGroup" displayName="Transitions - Spatial">
+          <group name="STSimTransitionSizeGroup" displayName="Transition Size">
             <item name="stsim_TransitionSizeDistribution"/>
             <item name="stsim_TransitionSizePrioritization"/>
           </group>
@@ -106,7 +109,7 @@
         </group>
         <item name="stsim_TransitionOrder" displayName="Transitions - Order"/>
         <item name="stsim_TransitionTargetPrioritization" displayName="Transitions - Target Prioritization"/>
-        <group name="Time Since Transition">
+        <group name="STSimTSTGroup" displayName="Time Since Transition">
           <item name="stsim_TimeSinceTransitionGroup"/>
           <item name="stsim_TimeSinceTransitionRandomize"/>
         </group>
