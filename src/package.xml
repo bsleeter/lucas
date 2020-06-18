@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<package name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" version="1.0.3" url="https://github.com/bsleeter/lucas">
+<package name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" version="1.0.4" url="https://github.com/bsleeter/lucas">
   <transformers>
     <transformer name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" isPrimary="True" templatesOnly="True">
       <runtime>
@@ -28,7 +28,7 @@
           <item name="stsim_StratumRasterMap"/>
           <item name="stsim_StateAttributeRasterMap"/>
           <item name="stsim_TransitionAttributeRasterMap"/>
-          <item name="stsim_AATPRasterMap"/>
+          <item name="stsim_AverageTransitionProbabilityRasterMap"/>
           <item name="stsim_TransitionEventRasterMap"/>
         </group>
       </group>
@@ -90,7 +90,11 @@
         <item name="stsim_InitialConditionsSpatial" displayName="Spatial"/>
       </group>
       <item name="stsim_TransitionTarget"/>
-      <item name="stsim_OutputOptions"/>
+      <group name="OutputOptions" displayName="Output Options">
+        <item name="stsim_OutputOptions"/> 
+        <item name="stsim_OutputOptionsSpatial"/>         
+        <item name="stsim_OutputOptionsSpatialAverage"/>        
+      </group>
       <group name="Advanced">
         <item name="stsim_TransitionMultiplierValue" displayName="Transitions - Multipliers"/>
         <group name="STSimTransitionsSpatialGroup" displayName="Transitions - Spatial">
