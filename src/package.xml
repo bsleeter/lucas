@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<package name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" version="1.0.4" url="https://github.com/bsleeter/lucas">
+<package name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" version="1.0.5" url="https://github.com/bsleeter/lucas">
   <transformers>
     <transformer name="lucas" displayName="Land Use and Carbon Scenario Simulator (LUCAS)" isPrimary="True" templatesOnly="True">
       <runtime>
