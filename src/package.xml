@@ -16,20 +16,39 @@
           <item name="stsim_StateClassSummaryReport"/>
           <item name="stsim_TransitionSummaryReport"/>
           <item name="stsim_TransitionStateSummaryReport"/>
+          <item name="stsim_TSTReport"/>
           <item name="stsim_StateAttributeReport"/>
           <item name="stsim_TransitionAttributeReport"/>
           <item name="coreforms_ScenarioDescriptionReport"/>
         </group>
         <group name="Maps">
-          <item name="stsim_StateClassRasterMap"/>
-          <item name="stsim_TransitionRasterMap"/>
-          <item name="stsim_AgeRasterMap"/>
-          <item name="stsim_TSTRasterMap"/>
-          <item name="stsim_StratumRasterMap"/>
-          <item name="stsim_StateAttributeRasterMap"/>
-          <item name="stsim_TransitionAttributeRasterMap"/>
-          <item name="stsim_AverageTransitionProbabilityRasterMap"/>
-          <item name="stsim_TransitionEventRasterMap"/>
+          <group name="stsim_StateClasses" displayName="State Classes">
+            <item name="stsim_StateClassRasterMap" displayName="Iteration"/>
+            <item name="stsim_AverageStateClassRasterMap" displayName="Average"/>
+          </group>
+          <group name="Ages">
+            <item name="stsim_AgeRasterMap" displayName="Iteration"/>
+            <item name="stsim_AverageAgeRasterMap" displayName="Average"/>
+          </group>
+          <group name="PrimaryStrata" displayName="Primary Strata">
+            <item name="stsim_StratumRasterMap" displayName="Iteration"/>
+            <item name="stsim_AverageStratumRasterMap" displayName="Average"/>
+          </group>
+          <group name="Transitions">
+            <item name="stsim_TransitionRasterMap" displayName="Iteration"/>
+            <item name="stsim_AverageTransitionProbabilityRasterMap" displayName="Average"/>
+            <item name="stsim_TransitionEventRasterMap" displayName="Iteration - Events"/>
+            <item name="stsim_TSTRasterMap"/>
+            <item name="stsim_AverageTSTRasterMap"/>
+          </group>"
+          <group name="StateAttributes" displayName="State Attributes">
+            <item name="stsim_StateAttributeRasterMap" displayName="Iteration"/>
+            <item name="stsim_AverageStateAttributeRasterMap" displayName="Average"/>
+          </group>
+          <group name="TransitionAttributes" displayName="Transition Attributes">
+            <item name="stsim_TransitionAttributeRasterMap" displayName="Iteration"/>
+            <item name="stsim_AverageTransitionAttributeRasterMap" displayName="Average"/>
+          </group>
         </group>
       </group>
     </layout>
@@ -76,9 +95,14 @@
           <item name="stsim_StateAttributeType"/>
           <item name="stsim_TransitionAttributeType"/>
         </group>
+        <group name="TST" displayName="Time-Since-Transition">
+          <item name="stsim_TSTType"/>
+          <item name="stsim_TSTGroup"/>
+        </group>
         <item name="corestime_DistributionType"/>
         <item name="corestime_ExternalVariableType"/>
         <item name="stsim_SizeClass"/>
+        <item name="core_AutoGenTag"/>
       </group>
       <item name="stsim_Terminology"/>
     </layout>
@@ -88,12 +112,14 @@
       <group name="STSimInitialConditionsGroup" displayName="Initial Conditions">
         <item name="stsim_InitialConditionsNonSpatial" displayName="Non Spatial"/>
         <item name="stsim_InitialConditionsSpatial" displayName="Spatial"/>
+        <item name="stsim_TimeSinceTransitionRandomize"/>
+        <item name="stsim_InitialTSTSpatial"/>
       </group>
       <item name="stsim_TransitionTarget"/>
       <group name="OutputOptions" displayName="Output Options">
-        <item name="stsim_OutputOptions"/> 
-        <item name="stsim_OutputOptionsSpatial"/>         
-        <item name="stsim_OutputOptionsSpatialAverage"/>        
+        <item name="stsim_OutputOptions" displayName="Tabular"/>
+        <item name="stsim_OutputOptionsSpatial" displayName="Spatial"/>
+        <item name="stsim_OutputOptionsSpatialAverage" displayName="Spatial Average"/>
       </group>
       <group name="Advanced">
         <item name="stsim_TransitionMultiplierValue" displayName="Transitions - Multipliers"/>
@@ -113,10 +139,7 @@
         </group>
         <item name="stsim_TransitionOrder" displayName="Transitions - Order"/>
         <item name="stsim_TransitionTargetPrioritization" displayName="Transitions - Target Prioritization"/>
-        <group name="STSimTSTGroup" displayName="Time Since Transition">
-          <item name="stsim_TimeSinceTransitionGroup"/>
-          <item name="stsim_TimeSinceTransitionRandomize"/>
-        </group>
+        <item name="stsim_TimeSinceTransitionGroup"/>        
         <group name="Attributes">
           <item name="stsim_StateAttributeValue"/>
           <item name="stsim_TransitionAttributeValue"/>
@@ -125,9 +148,12 @@
         </group>
         <item name="stsim_DistributionValue"/>
         <item name="corestime_ExternalVariableValue"/>
-        <item name="stsim_Multiprocessing"/>
-        <item name="corestime_Multiprocessing"/>
+        <group name="Multiprocessing">
+          <item name="stsim_Multiprocessing"/>
+          <item name="corestime_Multiprocessing"/>
+        </group>
         <item name="corestime_External" displayName="External Program"/>
+        <item name="core_AutoGenTagValue"/>
       </group>
     </layout>
     <layout name="coreforms_ScenarioDatafeedsLite">
