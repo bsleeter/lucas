@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template
+  name="lucas-conus"
+  displayName="LUCAS CONUS"
+  description="{br}Add-on package for the ST-Sim containing Land Use and Carbon Scenario Simulator (LUCAS) data for CONUS." 
+  location="https://s3.us-west-2.amazonaws.com/apexrms.com.syncrosim.templates/lucas/v1.1.0/lucas-conus.zip"
+  liveUpdate="True">
+</template>
